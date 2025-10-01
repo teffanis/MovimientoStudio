@@ -1,0 +1,257 @@
+.item-list-container {
+  padding-top: 100px; /* Compensar navbar fija */
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.greeting-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.greeting-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Categorías a ancho completo */
+.category-full-width {
+  margin-bottom: 0; 
+}
+
+.category-image-full {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.full-width-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s ease;
+}
+
+.category-full-width:hover .full-width-image {
+  transform: scale(1.05);
+}
+
+/* Imagen translúcida */
+.full-width-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s ease;
+  opacity: 0.8; /* % de opacidad */
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Diferentes colores para cada categoría */
+.category-full-width:nth-child(1) .category-overlay {
+  background: rgba(102, 126, 234, 0.3); 
+}
+
+.category-full-width:nth-child(2) .category-overlay {
+  background: rgba(118, 75, 162, 0.3); 
+}
+
+.category-full-width:nth-child(3) .category-overlay {
+  background: rgba(131, 17, 42, 0.3); 
+}
+
+.category-info {
+  max-width: 600px;
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.15); /* Info translúcido */
+  backdrop-filter: blur(20px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.category-info {
+  max-width: 600px;
+  text-align: center;
+  color: white;
+}
+
+.category-info h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.category-info p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.category-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.category-features li {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.category-features li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.category-actions {
+  margin-top: 2.5rem;
+}
+
+.category-price {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  display: inline-block;
+}
+
+.category-btn-large {
+  background: rgba(255, 255, 255, 0.9);
+  color: #667eea;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.category-btn-large:hover {
+  background: white;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .category-info h2 {
+    font-size: 3rem;
+  }
+  
+  .greeting-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 20px;
+  }
+  
+  .greeting-title {
+    font-size: 2.5rem;
+  }
+  
+  .greeting-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .category-image-full {
+    height: 80vh;
+  }
+  
+  .category-info h2 {
+    font-size: 2.5rem;
+  }
+  
+  .category-info p {
+    font-size: 1.1rem;
+  }
+  
+  .category-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-btn-large {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 15px;
+  }
+  
+  .greeting-title {
+    font-size: 2rem;
+  }
+  
+  .category-image-full {
+    height: 70vh;
+  }
+  
+  .category-info h2 {
+    font-size: 2rem;
+  }
+  
+  .category-overlay {
+    padding: 1rem;
+  }
+  
+  .category-btn-large {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  
+  .category-price {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

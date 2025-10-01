@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --accent-color: #f56565;
+  --text-dark: #2d3748;
+  --text-light: #718096;
+  --bg-white: #ffffff;
+  --bg-gray: #f7fafc;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Arial', sans-serif;
+  background-color: #f7fafc;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+.App {
+  min-height: 100vh;
+}
