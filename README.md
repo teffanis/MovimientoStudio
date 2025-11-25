@@ -38,18 +38,9 @@ npm install
 npm install react-router-dom firebase
 ```
 
-2. Configurar variables de entorno (Vite): crear un archivo `.env` en la raíz con las claves de Firebase:
 
-```
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-VITE_FIREBASE_APP_ID=your_app_id
-```
 
-3. Ejecutar la app en modo desarrollo:
+2. Ejecutar la app en modo desarrollo:
 
 ```bash
 npm run dev
