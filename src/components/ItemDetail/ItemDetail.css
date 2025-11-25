@@ -1,0 +1,5 @@
+.item-detail{display:flex;gap:16px;padding:16px}
+.detail-image{width:320px;height:320px;object-fit:cover}
+.detail-info{flex:1}
+.out-of-stock{color:#e63946}
+.added-msg{color:#2a9d8f}

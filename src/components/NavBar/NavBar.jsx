@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
 import logo from '../../assets/img/logo.jpg'
 import './NavBar.css'
@@ -30,29 +31,29 @@ const NavBar = () => {
         {/* Enlaces de Navegación */}
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <a href="#inicio" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Inicio
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#clases" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/category/clases" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Clases Sede
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#cursos" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/category/cursos" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Cursos Online
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#ebooks" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/category/ebooks" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Ebooks
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#contacto" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/contacto" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Contacto
-            </a>
+            </Link>
           </li>
         </ul>
 

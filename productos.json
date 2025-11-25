@@ -1,0 +1,27 @@
+
+[
+  {
+    "title": "Clase en sede",
+    "price": 25,
+    "stock": 10,
+    "category": "clases",
+  "image": "src/assets/img/sede.jpg",
+    "description": "Clase presencial de yoga para todos los niveles."
+  },
+  {
+    "title": "Curso Online de Danza",
+    "price": 149,
+    "stock": 20,
+    "category": "cursos",
+  "image": "src/assets/img/cursos.jpg",
+    "description": "Curso completo de danza contemporánea online."
+  },
+  {
+    "title": "Ebook Anatomía del Movimiento",
+    "price": 19,
+    "stock": 50,
+    "category": "ebooks",
+  "image": "src/assets/img/ebook.jpg",
+    "description": "Guía digital sobre anatomía aplicada al movimiento."
+  }
+]

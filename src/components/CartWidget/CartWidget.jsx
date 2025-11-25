@@ -1,22 +1,19 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './CartWidget.css'
+import { useCart } from '../../context/CartContext'
 
 const CartWidget = () => {
-  const [cartCount, setCartCount] = useState(0)
-
-  // Agregar al carrito
-  const addToCart = () => {
-    setCartCount(prev => prev + 1)
-  }
+  const { getTotalItems } = useCart()
+  const total = getTotalItems()
 
   return (
     <div className="cart-widget">
-      <button className="cart-btn" onClick={addToCart}>
+      <Link to="/cart" className="cart-btn">
         <span className="cart-icon">🛒</span>
-        {cartCount > 0 && (
-          <span className="cart-count">{cartCount}</span>
+        {total > 0 && (
+          <span className="cart-count">{total}</span>
         )}
-      </button>
+      </Link>
     </div>
   )
 }

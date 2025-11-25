@@ -1,0 +1,5 @@
+.item-card{border:1px solid #ddd;padding:8px;border-radius:6px;text-align:center}
+.item-image{width:100%;height:160px;object-fit:cover}
+.item-title{font-size:1rem;margin:8px 0}
+.item-price{color:#2a9d8f}
+.item-link{display:inline-block;margin-top:8px}
