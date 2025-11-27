@@ -1,0 +1,27 @@
+
+[
+  {
+    "title": "Danza Contemporánea - Clase Presencial",
+    "price": 50000,
+    "stock": 10,
+    "category": "clases",
+    "image": "src/assets/img/maxresdefault.jpg ",
+    "description": "Clase presencial de tecnica contemporanea para todos los niveles. Cupos limitados"
+  },
+  {
+    "title": "Curso Online de Danza Clasica" ,
+    "price": 8400,
+    "stock": 200,
+    "category": "cursos",
+    "image": "src/assets/img/onlinedance.webp",
+    "description": "Curso completo de danza clasica online. Metodos pedagogicos y tecnicos"
+  },
+  {
+    "title": "Ebook Calma y concentración",
+    "price": 4800,
+    "stock": 500,
+    "category": "ebooks",
+  "image": "src/assets/img/calm.webp ",
+    "description": "Guía digital mensual para lograr el foco, la calma y conectar con tu interior."
+  }
+]

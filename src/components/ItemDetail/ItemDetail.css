@@ -1,5 +1,104 @@
-.item-detail{display:flex;gap:16px;padding:16px}
-.detail-image{width:320px;height:320px;object-fit:cover}
-.detail-info{flex:1}
-.out-of-stock{color:#e63946}
-.added-msg{color:#2a9d8f}
+/* Modern Moodhaus-inspired detail view */
+.item-detail-modern {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
+	align-items: flex-start;
+	margin: 2.5rem auto;
+	max-width: 950px;
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+	padding: 2.5rem 2rem;
+}
+.idm-imgbox {
+	flex: 0 0 360px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f7f7f7;
+	border-radius: 14px;
+	box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+	min-height: 360px;
+}
+.idm-img {
+	width: 320px;
+	height: 320px;
+	object-fit: cover;
+	border-radius: 12px;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+.idm-info {
+	flex: 1;
+	min-width: 260px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.idm-title {
+	font-size: 2.1rem;
+	font-weight: 700;
+	margin: 0 0 0.5rem;
+	color: #222;
+}
+.idm-desc {
+	font-size: 1.1rem;
+	color: #444;
+	margin-bottom: 0.5rem;
+}
+.idm-price-row {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: 1rem;
+}
+.idm-price {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+.idm-stock {
+	font-size: 1rem;
+	color: #0a0;
+	font-weight: 500;
+}
+.idm-stock.out {
+	color: #c00;
+}
+.idm-actions {
+	margin: 1.5rem 0 0.5rem;
+}
+.idm-success {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	background: #e6ffe6;
+	border-radius: 10px;
+	padding: 1.2rem 1.5rem;
+	margin-top: 1.5rem;
+	box-shadow: 0 1px 6px rgba(0,128,0,0.07);
+}
+.idm-check {
+	font-size: 2.2rem;
+	color: #0a0;
+	font-weight: bold;
+}
+.idm-msg {
+	font-size: 1.1rem;
+	color: #222;
+	margin: 0 0 0.2rem;
+}
+.idm-gocart {
+	display: inline-block;
+	margin-top: 0.2rem;
+	color: #fff;
+	background: #222;
+	border-radius: 6px;
+	padding: 0.4rem 1.1rem;
+	font-weight: 500;
+	text-decoration: none;
+	transition: background .15s;
+}
+.idm-gocart:hover {
+	background: #0a0;
+}

@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import './Item.css'
 
 const Item = ({ product }) => {
-  const imgSrc = product?.image && product.image.startsWith('src/')
-    ? new URL(`/${product.image}`, import.meta.url).href
-    : product?.image
+  let imgSrc = product?.image
+  if (imgSrc && (imgSrc.startsWith('src/assets/img/') || imgSrc.startsWith('/src/assets/img/')))
+    imgSrc = new URL(imgSrc.replace(/^\//, ''), import.meta.url).href
 
   return (
     <div className="item-card">

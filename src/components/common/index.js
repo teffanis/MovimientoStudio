@@ -1,0 +1,10 @@
+// Barrel file to re-export commonly used components
+export { default as NavBar } from '../NavBar/NavBar'
+export { default as CartWidget } from '../CartWidget/CartWidget'
+export { default as Item } from '../Item/Item'
+export { default as ItemList } from '../ItemList/ItemList'
+export { default as ItemDetail } from '../ItemDetail/ItemDetail'
+export { default as ItemCount } from '../ItemCount/ItemCount'
+export { default as Cart } from '../Cart/Cart'
+export { default as CartItem } from '../CartItem/CartItem'
+export { default as CheckoutForm } from '../CheckoutForm/CheckoutForm'

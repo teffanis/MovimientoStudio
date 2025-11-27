@@ -1,26 +1,7 @@
 import './ItemListContainer.css'
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import ItemList from '../ItemList/ItemList'
-import { getProducts } from '../../services/firebase'
+import ProductGrid from '../ProductGrid/ProductGrid'
 
 const ItemListContainer = ({ greeting }) => {
-  const [products, setProducts] = useState([])
-  const [loading, setLoading] = useState(true)
-  const { categoryId } = useParams()
-
-  useEffect(() => {
-    setLoading(true)
-    getProducts(categoryId)
-      .then(all => {
-        setProducts(all)
-      })
-      .catch(err => {
-        console.error('Error cargando productos', err)
-      })
-      .finally(() => setLoading(false))
-  }, [categoryId])
-
   return (
     <div className="item-list-container">
       <section className="hero-section">
@@ -30,10 +11,9 @@ const ItemListContainer = ({ greeting }) => {
         </div>
       </section>
 
-      <section className="products-section">
-        {loading && <p>Cargando productos...</p>}
-        {!loading && products.length === 0 && <p>No hay productos en esta categoría.</p>}
-        {!loading && products.length > 0 && <ItemList products={products} />}
+      <section className="catalog-section">
+        <h2 className="catalog-title">Productos</h2>
+        <ProductGrid />
       </section>
     </div>
   )

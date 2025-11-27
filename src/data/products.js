@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     name: "Clase en sede",
-    description: "Clase presencial de Danzas, yoga , gym localizada para todos los niveles."
+    description: "Clase presencial de Danzas, yoga , gym localizada para todos los niveles.",
     stock: 15,  
     image:"src/assets/img/sede.jpg",
     price: 525,
@@ -12,7 +12,7 @@ const products = [
   {
      id: 2,
      name: "Curso Online de Danza",
-     description: "Curso completo de danza contemporánea, danza clasica , flexiilidad online."
+     description: "Curso completo de danza contemporánea, danza clasica , flexiilidad online.",
      stock: 20,
      image: "src/assets/img/cursos.jpg",
      price: 149,
@@ -21,7 +21,7 @@ const products = [
   {
       id: 3,
     name: "Ebook Anatomía del Movimiento",
-    description:  "Guía digital sobre anatomía aplicada al movimiento."
+    description:  "Guía digital sobre anatomía aplicada al movimiento.",
     stock: 150,         
     image:"src/assets/img/ebook.jpg",
     price: 525,
